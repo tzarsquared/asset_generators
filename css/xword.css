@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+.grid {
+	width: 50%;
+	margin: 1%;
+}
+
+.blank {
+	visibility: hidden;
+}
+
+.clues {
+	width: 45%;
+	margin: 1%;
+	float: left;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#row1 td {
+	border-top: solid 1px black;
+}
+
+.block, .blno {
+	background-color: black;
+	border: solid 1px black;
+	border-top: none;
+}
+
+.block {
+	width: 20px;
+	height: 25px;
+}
+
+.space, .number {
+	margin: 0;
+	border-bottom: solid 1px black;
+	border-top: none;
+	height: 25px;
+}
+
+.number {
+	text-align: left;
+	vertical-align: top;
+	border-right: none;
+	font-size: 0.5em;
+	border-left: solid 1px black;
+	width: 5px;
+}
+
+.space {
+	text-align: center;
+	vertical-align: middle;
+	border-left: none;
+	border-right: solid 1px black;
+	padding-right: 0.25px;
+	width: 20px;
+}
+
+.acrossclues, .downclues {
+	clear: both;
+	height: 100px;
+	overflow: scroll;
+	margin: 1%;
+	padding: 0.25em;
+	border: solid 1px black;
+}
+
+#xword_grid .currword {
+	background-color: #CCCCFF;
+}
+
+#xword_grid .curr {
+	background-color: #8080FF;
+}
+
+.acrossclues .active, .downclues .active {
+	background-color: #FFCC80;
+}
+
+#check, #reset {
+	clear: both;
+	margin: 1em;
+	border-radius: 10px;
+	color: white;
+	padding: 0.5em;
+	background-color: #5cb85c;
+}
+
+.check:hover {
+	background-color: #4cae4c;
+}
+
+.incorrect {
+	background-color: #b01d1f;
+}
